@@ -16,7 +16,8 @@ const apiKey = require("./keys.js");
 // console.log(apiKey.bandsInTown.id);
 // console.log(apiKey.omdb.id);
 
-userInput = process.argv[2];
+command = process.argv[2];
+userInput = process.argv[3];
 
 // ********************************** Bands in town code **************************************************************
 function concert(userInput) {
@@ -104,5 +105,20 @@ function movie(userInput) {
 // spotifyFunction(userInput);
 // movie(userInput);
 
+switch(command) {
+    case "concert-this":
+        concert(userInput);
+    break;
 
+    case "spotify-this-song":
+    spotifyFunction(userInput);
+    break;
+
+    case "movie-this":
+    movie(userInput);
+    break;
+
+    default:
+    console.log("Wrong command");
+}
 
