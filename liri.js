@@ -101,9 +101,7 @@ function movie(userInput) {
     });
 
 }
-// concert(userInput);
-// spotifyFunction(userInput);
-// movie(userInput);
+
 
 switch(command) {
     case "concert-this":
