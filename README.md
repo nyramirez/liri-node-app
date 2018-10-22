@@ -20,11 +20,11 @@ Liri works from the command-line/terminal in your computer. Here are the steps t
   
 **EXAMPLE**
 
-![concert-this example](./Images/example1)
+![concert-this example](./Images/example1.png)
 
-![spotify-this-song example](./Images/example2)
+![spotify-this-song example](./Images/example2.png)
 
-![movie-this example](./Images/example3)
+![movie-this example](./Images/example3.png)
 
 **do-what-it-says COMMAND**
 - This command is dependent of the file *random.txt*
@@ -33,6 +33,6 @@ Liri works from the command-line/terminal in your computer. Here are the steps t
 
 **EXMAPLE of Responses**
 
-![movie-this example](./Images/examplewithresponse)
+![movie-this example](./Images/examplewithresponse.png)
 
-![movie-this example](./Images/examplewithresponse2)
+![movie-this example](./Images/examplewithresponse2.png)
