@@ -164,4 +164,3 @@ switch(command) {
     default:
     console.log("Wrong command");
 }
-
