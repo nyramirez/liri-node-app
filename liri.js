@@ -1,3 +1,6 @@
+// requesting fs PAckage
+const fs = require("fs");
+
 // requesting node-spotify-API
 var Spotify = require('node-spotify-api');
 
@@ -86,7 +89,7 @@ function movie(userInput) {
 
         // Converting response to JSON format
         var bodyMovieJson = JSON.parse(res.body);
-        // console.log(bodyJson);
+        // console.log(bodyMovieJson);
         // console.log(bodyJson[0].datetime);
         console.log("**************************");
         console.log("Movie title: " + bodyMovieJson.Title);
@@ -102,6 +105,44 @@ function movie(userInput) {
 
 }
 
+// ******************************************** Do what it says Code  **************************************************************
+function dwis () {
+    fs.readFile("./random.txt", "utf-8", function(err,data){
+        if(err) {
+            return console.log("Hay un error en dwis()" + err )
+        }
+
+        else {
+            // console.log(data);
+            const dataArray = data.split(",");
+            // console.log(dataArray);
+            // console.log(dataArray[0]);
+            // console.log(dataArray[1]);
+
+            switch(dataArray[0]){
+            
+                case "concert-this":
+                    concert(dataArray[1]);
+                break;
+    
+                case "spotify-this-song":
+                    spotifyFunction(dataArray[1]);
+                break;
+    
+                case "movie-this":
+                    movie(dataArray[1]);
+                break;
+                        
+                default:
+                console.log("Error on dwis command line");
+            }
+
+        }
+
+    });
+}
+
+// ******************************************** Command line Code  **************************************************************
 
 switch(command) {
     case "concert-this":
@@ -109,11 +150,15 @@ switch(command) {
     break;
 
     case "spotify-this-song":
-    spotifyFunction(userInput);
+        spotifyFunction(userInput);
     break;
 
     case "movie-this":
-    movie(userInput);
+        movie(userInput);
+    break;
+
+    case "do-what-it-says":
+        dwis();    
     break;
 
     default:
