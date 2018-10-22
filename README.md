@@ -31,9 +31,9 @@ Liri works from the command-line/terminal in your computer. Here are the steps t
   - Inside of random.txt, there is a line of text divided with commas. The text before the comma represents the command to 
   be used (concert-this, spotify-this-song or movie-this). The text after the comma, represent the information to be looking for.
 
-![random.txt example](./Images/randomwithresponse)
+![random.txt example](./Images/randomwithresponse.png)
 
-![random.txt example](./Images/randomwithresponse2)
+![random.txt example](./Images/randomwithresponse2.png)
 
 **EXMAPLE of Responses**
 
